@@ -1,0 +1,9 @@
+
+
+============================== 2022-05-04 12:36:29.041886 | 2f76081b-65ec-4373-befb-ff225e4e1e0e ==============================
+12:36:29.041886 [info ] [MainThread]: Running with dbt=1.0.5
+12:36:29.042566 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/home/catareias/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, project_name='jaffle_shop', skip_profile_setup=False, defer=None, state=None, cls=<class 'dbt.task.init.InitTask'>, which='init', rpc_method=None)
+12:36:29.042794 [debug] [MainThread]: Tracking: tracking
+12:36:29.046776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f701341c670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f701341c520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f701341c610>]}
+12:36:29.047724 [info ] [MainThread]: A project called jaffle_shop already exists here.
+12:36:29.048260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f701341c610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f701341c670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f701341c460>]}
