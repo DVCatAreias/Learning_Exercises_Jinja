@@ -1,0 +1,19 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#	.gitignore
+#	README.md
+#	analyses/
+#	dbt_project.yml
+#	macros/
+#	models/
+#	seeds/
+#	snapshots/
+#	tests/
+#

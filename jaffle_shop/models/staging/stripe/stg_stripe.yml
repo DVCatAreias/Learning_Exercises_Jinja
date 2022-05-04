@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_payments
+    description: payment data from stripe linking payment and order data
+    columns:
+      - name: payment_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: order_id
+        description: foreign key to stg_orders.order_id
+        tests:
+          - relationships:
+              to: ref('stg_orders')
+              field: order_id

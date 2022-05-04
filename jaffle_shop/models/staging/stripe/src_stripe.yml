@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: stripe
+    database: dbt-tutorial # not raw
+    schema: stripe
+    tables:
+      - name: payment
+        loaded_at_field: _batched_at
+        freshness:
+          warn_after: {count: 24, period: hour}
+          error_after: {count: 48, period: hour}
+        columns:
+        - name: paymentmethod
+          description: "{{ doc('payment_method') }}"
+          tests:
+            - accepted_values:
+                values: [ 'bank_transfer', 'coupon', 'credit_card', 'gift_card']
